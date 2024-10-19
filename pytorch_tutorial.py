@@ -285,8 +285,6 @@ print(b)
 print(b.device)
 print(device)
 
-# No they aren't mapped to the same location this time, so not on GPU i guess as it was claimed to bahve similar as before
-# Also, if we notice, we dont have the limitation of not being able to add int to float unlike tensorflow
 
 # Update: when i make b a GPU tensor then a and b are different, b doesn't get updated with
 # change in a, but if we make b as cpu tensor then b will also get updated. Another update a = a + 1 make a new tensor while a += 1
